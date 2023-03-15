@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Epilogue";
+  background-color: hsl(0, 0%, 98%);
+  min-width: 1340px;
+  min-height: 100vh;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/* ======================================START MAIN AREA================================= */
+.site {
+  padding: 2.4rem 1.6rem;
+}
+/* ======================================START NAVBAR AREA============================== */
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.drop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.drop-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.drop-li {
+  list-style: none;
+  padding-left: 50px;
+  position: relative;
+}
+
+.drop-li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+
+.drop-li a:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+.a-drop {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 5px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.171);
+  z-index: 1;
+  position: absolute;
+  width: 140px;
+  margin-left: -125px;
+}
+
+.comp {
+  width: 100px;
+}
+
+.down {
+  margin-left: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.up {
+  display: none;
+  margin-left: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.a-drop a {
+  margin-top: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.log {
+  margin-left: 350px;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.in-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.reg-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.in-btn:hover {
+  color: hsl(0, 0%, 8%);
+  font-size: 1.5rem;
+}
+
+.reg-btn:hover {
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+  font-size: 1.5rem;
+}
+
+/* ======================================END NAVBAR AREA============================== */
+/* =============================START MAIN DIV AREA===================================== */
+.main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  padding: 2.3rem;
+}
+
+.image,
+.info {
+  width: 50%;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.info-h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+}
+
+.info-para {
+  margin-top: 100px;
+  color: hsl(0, 0%, 41%);
+  padding-right: 20px;
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+.info-btn {
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 8%);
+}
+
+.info-btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+.client {
+  margin-top: 200px;
+}
+
+.client-icon {
+  padding: 20px;
+}
+/* =============================END MAIN DIV AREA===================================== */
+/* ======================================END MAIN AREA================================= */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 20px;
+  color: hsl(0, 100%, 67%);
+  background-color: black;
+  margin-top: 130px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: hsl(39, 100%, 56%);
+}
+
+.foot a:hover {
+  color: hsl(300, 69%, 71%);
+}
+/* =============================END FOOTER  AREA=========================== */
+/* =============================START MEDIA AREA============================ */
+@media screen and (max-width: 375px) {
+  body {
+    min-width: 375px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .drop-li{
+    height: fit-content;
+  }
+
+  .drop {
+    flex-direction: column;
+    display: none;
+    top: 15%;
+    position: absolute;
+    min-width: 100%;
+    height:100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.171);
+  }
+
+  .drop-ul {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .drop-li {
+    margin-top: 50px;
+  }
+
+  .log {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .reg-btn {
+    margin-top: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image,
+  .info {
+    width: 100%;
+  }
+
+  .main-img {
+    content: url(./images/image-hero-mobile.png);
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+br {
+  display: none;
+}
+
+.info-h1 {
+  font-size: 1.8rem;
+}
+
+.info-para {
+  padding-right: 0px;
+  margin-top: 50px;
+}
+
+.client {
+  margin-top: 50px;
+}
+
+.client-icon {
+  padding: 20px 5px;
+}
+
+/* =============================END MEDIA AREA============================ */
