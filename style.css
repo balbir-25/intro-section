@@ -237,8 +237,7 @@ body {
   .drop {
     flex-direction: column;
     display: none;
-    top: 15%;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     height:100%;
     background-color: #ffffff;
@@ -268,6 +267,9 @@ body {
 
   .close {
     display: none;
+    position: fixed;
+    margin: 15px;
+    margin-left: -15px;
   }
 
   .reg-btn {
