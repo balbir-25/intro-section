@@ -68,12 +68,13 @@ body {
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.171);
   z-index: 1;
   position: absolute;
-  width: 140px;
+  width: 180px;
   margin-left: -125px;
 }
 
 .comp {
-  width: 100px;
+  width: 150px;
+  margin-left: -95px;
 }
 
 .down {
@@ -91,6 +92,8 @@ body {
 
 .a-drop a {
   margin-top: 30px;
+  display: inline-block;
+  padding: 0rem 1rem;
 }
 
 .icon {
